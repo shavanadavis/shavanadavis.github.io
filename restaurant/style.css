@@ -1,5 +1,5 @@
 body, html, h1{
-	margin:0;
+	margin:10;
 }
 h1{
   color:#FF74C2;
@@ -13,10 +13,10 @@ a:hover {
 }
 
 #wrapper {
-    width:960px;
+    width:1880px;
     background-color:antiquewhite;
 	padding-left: 10px;
-	margin: left;
+	margin: center;
 }
 
 body {
@@ -29,7 +29,7 @@ img {
 	margin: auto;
 }
 p {
-	text-align: left;
+	text-align: center;
 }
 #menu {
 	text-align:left;
