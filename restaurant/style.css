@@ -1,0 +1,49 @@
+body, html, h1{
+	margin:0;
+}
+h1{
+  color:#FF74C2;
+  font-family: "aguafina-script";
+}
+a {
+    color: hotpink;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+#wrapper {
+    width:960px;
+    background-color:antiquewhite;
+	padding-left: 10px;
+	margin: left;
+}
+
+body {
+   background-image: url("twitter-templateTM2.jpg");
+   background-size: cover;
+}
+
+img {
+	display: block;
+	margin: auto;
+}
+p {
+	text-align: left;
+}
+#menu {
+	text-align:left;
+	margin-top: auto;
+}
+#menu a{
+	display: inline-block;
+	background: rgb (255,0,0);
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+@media (max-width: 750px) {
+	#wrapper {
+		     width:80%;
+		     padding:20px;
+	}
+}
