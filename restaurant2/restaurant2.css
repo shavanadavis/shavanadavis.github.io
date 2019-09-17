@@ -1,0 +1,67 @@
+/*
+Creator: Shavana Davis
+Date created: Monday, 9/16/19
+Date last modified: 9/16/19
+*/
+
+.btn-primary {
+  background-color:#0c8346;
+  border-color: red;
+}
+.btn-hover{
+  color: none; 
+}
+jumbotron {
+  background-color: white;
+}
+body{
+  background-color: #242325;
+  font-family: arial, helvetica, sans-serif;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+header, footer{
+  text-align: center;
+  color: gold;
+  padding: 20px 10px 20px 10px;
+  height: 100px;
+}
+
+td {
+  color: gold;
+  width: 25%;
+  text-align: center;
+  background-color: #0c8346
+}
+header{
+}
+
+.clear-float {
+  clear:both;
+}
+
+.links:hover {
+  background-color: #f5edf0;
+}
+
+nav {
+  border-top: 3px solid gold;
+  border-bottom: 3px dashed #f46036;
+  margin-top: 10px;
+  display: block;
+}
+
+ body .a {
+  color: gold;
+}
+
+nav a:visited {
+  color: black;
+}
+nav a:hover {
+  font-weight: bold;
+  color: red;
+}
+nav a:active {
+  font-weight: bold;
+}

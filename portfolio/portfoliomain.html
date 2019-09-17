@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!--
 Name: Shavana Davis
 Created: Tuesday, September 10, 2019
@@ -7,43 +6,87 @@ Most Recent version:
  -->
 <html lang="en">
 <head>
-   <title>Shavana's Portfolio</title>
+   <link href="styles/main.css" rel="stylesheet" type="text/css" />
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Shavana's Portfolio</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Z
+t27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
    <style>
       table {
-         border: medium solid #4169E1;
+         border: thick solid black;
          border-collapse: collapse;
+         padding: 5px 10px;
+         width: 300px;
+         margin: auto ;
        }
        th, td{
          border: 1px solid black;
+         padding-top: 1.5px;
+         background-color: #546a7b;
+         color: white;
+       }
+
+       caption {
+         font-weight: bold;
+         font-size: 1.2em;
+         margin-bottom: 8px;
+       }
+
+       tr{
+         height: 20px;
 
        }
 
+       td:nth-child(odd){
+         background-color: #e4c3ad;
+         color: black;
+       }
 
+       article img {
+         float:left;
+       }
+
+       .right-content {
+         float:left;
+       }
+       article {
+         margin-bottom: 16px;
+       }
 
      </style>
+
 </head>
 
 <body>
-   <header>
-       <h1>Portfolio for Shavana Davis</h1>
-
+   <header class="jumbotron">
+       <h1>Shavana Davis</h1>
+       <h2 class="font-italic"> Web Developer Extraordinaire</h2>
+       <h3 class="text-right mt-5">Solving Web Dev problems!</h3>
    </header>
 
-  <hr />
     <nav>
       <!-- adding project.html, contact.html and testimonials.html links-->
-    <p><a href="contactpage.html">Contact Me</a></p>
-    <p><a href="ShavanaDavisResume.html" target="_blank">Resume</a></p>
-    <a href="https://www.linkedin.com/in/shavanadavis/"
-      target="_blank">LinkedIn Profile</a>
+    <p><a class="btn badge-pill" href="projects.html">Projects</a></p>
+    <p><a class="btn badge-pill" href="contactpage.html">Contact Me</a></p>
+    <p><a class="btn badge-pill" href="ShavanaDavisResume.html" target="_blank">Resume</a></p>
+    <p><a class="btn badge-pill" href="https://www.linkedin.com/in/shavanadavis/"
+      target="_blank">LinkedIn Profile</a></p>
 
     </nav>
-  <hr />
 
 <section1>
  <article id="about-me">
 <h2><em>About Me</em></h2>
-<img src="images/selfie.JPG" alt="Portrait of Shavana" height=400px/>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md">
+  <figure><img src="images/selfie.JPG" alt="Portrait of Shavana" width="50%" class="img-flu
+    id" /></figure>
+</div>
+
+<div class="col-lg-9 col-md">
   <p>
     My name is Shavana Davis and I am a front-end web developer in the making.
     I graduated with my Bachelors degree in communication studies in 2018 from Buffalo State College.
@@ -53,6 +96,9 @@ Most Recent version:
   <p>
      I want to be sucessful and create full stack web content to one day create my own website and app.
   </p>
+ </div>
+</div>
+  <div class="clear-float"></div>
  </article>
 </section1>
 
@@ -60,17 +106,20 @@ Most Recent version:
 <section2>
   <article id="past-experience">
 <h2><em>Past Experiences</em></h2>
-<img src="images/grad.JPG" alt="Shavana's Graduation" height=400px/>
-
+<img src="images/grad.JPG" alt="Shavana's Graduation" width="250px" />
+<div class="right-content">
 <table>
-    <caption>Employment History</caption>
+  <caption>Employment History</caption>
+   <thead>
       <tr>
           <th>Years of Employment</th>
           <th>Title</th>
           <th>Company</th>
           <th>Job Duties</th>
         </tr>
+    </thead>
 
+ <tbody>
       <tr>
         <td>2018-2019</td>
         <td>Administrative Specialist</td>
@@ -122,30 +171,43 @@ Most Recent version:
           </ul>
          </td>
        </tr>
+     </tbody>
     </table>
-
-</article>
+  </div>
+    <div class="clear-float"></div>
+  </article>
 </section2>
 
 
 <section3>
   <article id="hobbies">
     <h2><em>Hobbies</em></h2>
-    <img src="images/fun.JPG" alt="Picture first, then gym" height=400px/>
-<ol type="A">
+    <img src="images/fun.JPG" alt="Picture first, then gym" width="250px" />
+    <div class="right-content">
+ <ol type="A">
   <li>Workout at the gym</li>
   <li>Hangout with friends</li>
   <li>Travel with my significant other</li>
   <li>Try new foods</li>
-</ol>
-  </article>
+ </ol>
+ </div>
+ <div class="clear-float"></div>
+</article>
 </section3>
 
 
 <footer>
-  <hr />
   <p>&copy; 2019 Shavana Davis, All rights reserved.</p>
 <footer/>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/
+X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.j
+s" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossor
+igin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" i
+ntegrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigi
+n="anonymous"></script>
 
 </body>
 </html>
