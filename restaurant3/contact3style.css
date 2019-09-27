@@ -1,0 +1,95 @@
+nav {
+  border-top: 3px solid gold;
+  border-bottom: 3px dashed #f46036;
+  margin-top: 10px;
+  display: block;
+}
+nav a {
+  padding: 8px;
+  border: thin solid #0d1f2d
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  text-decoration: underline;
+  color: black;
+}
+
+/*.btn badge-pill {
+  background-color:#0c8346;
+  border-color: red;
+}*/
+
+.links {
+  background-color: #f46036;
+  border-color: green;
+}
+
+
+
+.jumbotron, footer{
+  text-align: center;
+  background-image: url("jumbo1.JPG");
+  background-size: cover;
+  color: white;
+  font-size: 30px;
+  padding: 20px 10px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+     background-position: top;
+     background-size: 1000px;
+     background-repeat: no-repeat;
+
+     }
+
+* {
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     outline: none;
+     font-family: 'Josefin Sans' , sans-serif;
+    }
+
+
+.wrapper {
+     padding: 15px;
+     margin: 50px;
+     border-radius: 50px;
+     background: white;
+     box-shadow: 4px 4px 4px;
+     }
+
+.wrapper h2{
+       text-align: center;
+       text-transform: uppercase;
+     }
+
+.wrapper .input_field {
+        margin-bottom: 10px
+     }
+
+.input_field input[type="text"],
+.wrapper textarea,
+.wrapper radio,
+.wrapper checkbox  {
+
+          width: 25%;
+          border: 1px solid;
+}
+
+.wrapper textarea {
+  height: 80px;
+  resize: none;
+}
+
+.wrapper #error_message {
+    margin-bottom: 20px;
+    padding: 0px;
+    background: orange;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}

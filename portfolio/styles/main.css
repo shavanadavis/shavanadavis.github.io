@@ -3,37 +3,35 @@ Creator: Shavana Davis
 Date created: 9/14/19
 Date last modified: 9/14/19
 */
-body {
+/*body {
   background-color: #fef9ff;
   font-family: arial, helvetica, sans-serif;
   color: #0d1f2d;
   max-width: 900px;
   margin: 0 auto;
-}
+}*/
 
-header, footer{
+jumbotron, footer {
   background-color: #546a7b;
-  color: #fef9ff;
-  height: 200px;
+  color: black;
   text-align: center;
-  padding: 20px 10px 20px 10px;
+  padding: 30px 10px 20px 10px;
+  margin-bottom: 20px
+  width: 100%;
+  text-align: center;
 }
 
-h1{
-  font-size: 2.5em;
-}
-
-nav{
+/*nav {
   border-top: 3px dashed black;
   border-bottom: 3px dashed black;
   margin-top: 4px;
-}
+}*/
 
-.clear-float {
-  clear:both;
-}
+ .clear-float {
+      clear: left;
+ }
 
-nav a {
+nav .btn {
   background-color: #5b7d87;
   color: #fef9ff;
   padding: 8px;
@@ -41,9 +39,10 @@ nav a {
   text-decoration: none;
   text-align: center;
   display: block;
-  margin: 20px;
+  margin: 10px;
   width: 100px;
 }
+
 nav a:visited {
   color:orange;
 }

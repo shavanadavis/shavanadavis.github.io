@@ -6,24 +6,22 @@ Most Recent version:
  -->
 <html lang="en">
 <head>
-   <link href="styles/main.css" rel="stylesheet" type="text/css" />
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Shavana's Portfolio</title>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Z
-t27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   <style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <style>
       table {
          border: thick solid black;
          border-collapse: collapse;
-         padding: 5px 10px;
-         width: 300px;
+         padding: 5px 5px;
+         width: 250px;
          margin: auto ;
        }
        th, td{
          border: 1px solid black;
-         padding-top: 1.5px;
+         padding-top: 0.5px;
          background-color: #546a7b;
          color: white;
        }
@@ -32,11 +30,6 @@ t27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
          font-weight: bold;
          font-size: 1.2em;
          margin-bottom: 8px;
-       }
-
-       tr{
-         height: 20px;
-
        }
 
        td:nth-child(odd){
@@ -48,18 +41,31 @@ t27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
          float:left;
        }
 
-       .right-content {
-         float:left;
-       }
        article {
          margin-bottom: 16px;
        }
-
+       .card-header, .card-header .btn {
+           background-color: #;
+           color: #fef9ff;
+       }
+       .accordion {
+           background-color: #eee;
+           color: #444;
+           cursor: pointer;
+           padding: 18px;
+           width: 100%;
+           text-align: center;
+           border: none;
+           outline: none;
+           transition: 0.4s;
+         }
      </style>
+
 
 </head>
 
 <body>
+  <div class="container">
    <header class="jumbotron">
        <h1>Shavana Davis</h1>
        <h2 class="font-italic"> Web Developer Extraordinaire</h2>
@@ -71,19 +77,18 @@ t27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <p><a class="btn badge-pill" href="projects.html">Projects</a></p>
     <p><a class="btn badge-pill" href="contactpage.html">Contact Me</a></p>
     <p><a class="btn badge-pill" href="ShavanaDavisResume.html" target="_blank">Resume</a></p>
-    <p><a class="btn badge-pill" href="https://www.linkedin.com/in/shavanadavis/"
-      target="_blank">LinkedIn Profile</a></p>
+    <p><a class="btn badge-pill" href="https://www.linkedin.com/in/shavanadavis/"target="_blank">LinkedIn</a></p>
 
     </nav>
 
 <section1>
  <article id="about-me">
 <h2><em>About Me</em></h2>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-3 col-md">
-  <figure><img src="images/selfie.JPG" alt="Portrait of Shavana" width="50%" class="img-flu
-    id" /></figure>
+
+<div class="row">
+  <div class="col-lg-3 col-md">
+   <img src="images/selfie.JPG" alt="Portrait of Shavana" width="250px"
+   class="img-fluid" />
 </div>
 
 <div class="col-lg-9 col-md">
@@ -98,7 +103,28 @@ t27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </p>
  </div>
 </div>
-  <div class="clear-float"></div>
+
+<div class="accordion" id="accordionExample">
+
+      <div class="card">
+         <div class="card-header" id="portfolio01">
+           <h5 class="mb-0">
+              <button style="color:black;" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      My First Portfolio Piece
+                  </button>
+             </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+           <p><a href="" target="_blank">Name of Website</a></p>
+          <figure><img src="images/website.png" alt="Screenshot of home page" /></figure>
+       </div> <!-- end class card-body -->
+    </div> <!-- end id collapseOne -->
+  </div> <!-- end class card -->
+
+</div> <!-- end class accordion -->
+<div class="clear-float"></div>
  </article>
 </section1>
 
@@ -146,31 +172,6 @@ t27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         </td>
       </tr>
 
-      <tr>
-        <td>2015-2016</td>
-        <td>Residential Assistant</td>
-        <td>Jamestown Community College</td>
-        <td>
-          <ul>
-            <li>Planned and created programs and bulletin boards for students to inform them about on-campus resources</li>
-            <li>Attended leadership workshops and meetings to educate myself on different ways to lead</li>
-            <li>Counseled Residents on in-house issues and disagreements to increase positive interactions among students</li>
-          <ul>
-        </td>
-      </tr>
-
-      <tr>
-        <td>2014-2015</td>
-        <td>Student Ambassador</td>
-        <td>Jamestown Community College</td>
-        <td>
-          <ul>
-            <li>Led campus tours to prospective students and their families to show JCC’s resources and campus</li>
-            <li>Participated in school panels and speeches for incoming students to help with their transition into college</li>
-            <li>Created new experiences and enhanced existing relationships with students and families</li>
-          </ul>
-         </td>
-       </tr>
      </tbody>
     </table>
   </div>
@@ -196,18 +197,13 @@ t27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </section3>
 
 
-<footer>
+<footer class="jumbotron">
   <p>&copy; 2019 Shavana Davis, All rights reserved.</p>
 <footer/>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/
-X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.j
-s" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossor
-igin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" i
-ntegrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigi
-n="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
